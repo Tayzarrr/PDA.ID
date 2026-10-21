@@ -112,14 +112,6 @@ Buka [http://localhost:5500](http://localhost:5500). Tekan **Ctrl+C** di PowerSh
 
 Pembayaran, nomor virtual account, status kursi, dan pola QR merupakan simulasi di browser. Konfirmasi pembayaran hanya mengubah status lokal; tidak terhubung ke bank, QRIS, payment gateway, atau sistem bioskop. Pola QR bukan kode pembayaran atau tiket yang tervalidasi. Data pemesanan belum disimpan secara permanen dan kembali ke nilai awal setelah refresh. Jadwal dan informasi bioskop merupakan data contoh, bukan informasi real-time.
 
-## 📤 Upload ke GitHub
-
-Baca **[panduan lengkap PowerShell](docs/PANDUAN-GITHUB.md)** untuk mulai dari membuka terminal di folder hasil ekstrak, membuat repository, push pertama, hingga workflow branch dan pull request.
-
-## 📝 Hak penggunaan aset
-
-Logo, poster, judul film, dan nama merek mengikuti hak masing-masing pemilik. Pemisahan file ini tidak memberikan lisensi baru atas aset tersebut. Periksa izin penggunaan sebelum memublikasikan atau memakai aset untuk keperluan komersial.
-
 ---
 
 <div align="center">
