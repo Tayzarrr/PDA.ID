@@ -1,0 +1,10 @@
+# Abaikan file sementara editor dan sistem operasi.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Abaikan dependensi dan hasil sementara pengembangan.
+node_modules/
+__pycache__/
+*.log
+.env

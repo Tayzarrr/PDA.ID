@@ -1,0 +1,5 @@
+# Simpan file teks dengan akhir baris yang konsisten.
+* text=auto
+# Perlakukan gambar sebagai data biner.
+*.jpg binary
+*.png binary

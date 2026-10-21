@@ -1,0 +1,502 @@
+<!-- Menyusun elemen dokumen. -->
+<!DOCTYPE html>
+<!-- Menyusun elemen html. -->
+<html lang="id">
+<!-- Menyusun elemen head. -->
+<head>
+  <!-- Menyusun elemen meta. -->
+  <meta charset="UTF-8" />
+  <!-- Menyusun elemen meta. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Menyusun elemen title. -->
+  <title>PDA.ID</title>
+  <!-- Memuat stylesheet eksternal untuk seluruh tampilan aplikasi. -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+<!-- Menutup elemen head. -->
+</head>
+<!-- Menyusun elemen body. -->
+<body>
+  <!-- Menyusun elemen div. -->
+  <div class="container app">
+    <!-- Menyusun elemen header. -->
+    <header class="topbar">
+      <!-- Menyusun elemen div. -->
+      <div class="brand">
+        <!-- Menyusun elemen div. -->
+        <div class="brand-badge logo-badge"><img src="assets/images/image-01.jpg" alt="Logo PDA.ID" /></div>
+        <!-- Menyusun elemen div. -->
+        <div>
+          <!-- Menyusun elemen h1. -->
+          <h1>PDA.ID Tickets</h1>
+          <!-- Menyusun elemen p. -->
+          <p>Booking tiket bioskop cepat, aman, dan real-time</p>
+        <!-- Menutup elemen div. -->
+        </div>
+      <!-- Menutup elemen div. -->
+      </div>
+      <!-- Menyusun elemen nav. -->
+      <nav class="main-nav">
+        <!-- Menyusun elemen button. -->
+        <button class="nav-link active" data-scroll="top">Home</button>
+        <!-- Menyusun elemen button. -->
+        <button class="nav-link" data-scroll="moviesSection">Film</button>
+        <!-- Menyusun elemen button. -->
+        <button class="nav-link" data-scroll="bookingSection">Pesan Tiket</button>
+        <!-- Menyusun elemen button. -->
+        <button class="nav-link" data-scroll="promoSection">Promo</button>
+      <!-- Menutup elemen nav. -->
+      </nav>
+      <!-- Menyusun elemen button dengan identitas scrollToBookingTop. -->
+      <button class="cta-nav" id="scrollToBookingTop">Pesan Sekarang</button>
+    <!-- Menutup elemen header. -->
+    </header>
+
+    <!-- Menyusun elemen div. -->
+    <div class="utility-bar">
+      <!-- Menyusun elemen label. -->
+      <label class="search-wrap">
+        <!-- Menyusun elemen span. -->
+        <span>🔎</span>
+        <!-- Menyusun elemen input dengan identitas searchInput. -->
+        <input id="searchInput" type="text" placeholder="Cari film favoritmu..." />
+      <!-- Menutup elemen label. -->
+      </label>
+      <!-- Menyusun elemen label. -->
+      <label class="region-wrap">
+        <!-- Menyusun elemen span. -->
+        <span>📍</span>
+        <!-- Menyusun elemen select dengan identitas regionSelect. -->
+        <select id="regionSelect"></select>
+      <!-- Menutup elemen label. -->
+      </label>
+    <!-- Menutup elemen div. -->
+    </div>
+
+    <!-- Menyusun elemen div. -->
+    <div class="header-line"></div>
+
+    <!-- Menyusun elemen div. -->
+    <div class="mobile-step-header">
+      <!-- Menyusun elemen div. -->
+      <div>
+        <!-- Menyusun elemen span dengan identitas mobileStepLabel. -->
+        <span id="mobileStepLabel">Step 1 dari 4</span>
+        <!-- Menyusun elemen strong dengan identitas mobileStepTitle. -->
+        <strong id="mobileStepTitle">Home</strong>
+      <!-- Menutup elemen div. -->
+      </div>
+      <!-- Menyusun elemen div dengan identitas mobileStepDots. -->
+      <div class="mobile-step-dots" id="mobileStepDots"></div>
+    <!-- Menutup elemen div. -->
+    </div>
+
+
+    <!-- Menyusun elemen section dengan identitas top. -->
+    <section class="hero" id="top">
+      <!-- Menyusun elemen div. -->
+      <div class="hero-copy">
+        <!-- Menyusun elemen div. -->
+        <div class="eyebrow"><span class="eyebrow-dot"></span>Booking tiket cepat, aman, dan real-time</div>
+        <!-- Menyusun elemen h2. -->
+        <h2>Pesan tiket bioskop masi ngantri yuk pakai PDA.ID</h2>
+        <!-- Menyusun elemen p. -->
+        <p>
+          <!-- Melanjutkan ekspresi, parameter, atau struktur data pada blok ini. -->
+          Pilih film favoritmu, tentukan daerah di Indonesia, pilih bioskop yang tersedia di daerah itu, atur jadwal, pilih kursi bernomor, lalu dapatkan e-tiket dengan tampilan yang lebih eksklusif.
+        <!-- Menutup elemen p. -->
+        </p>
+        <!-- Menyusun elemen div. -->
+        <div class="hero-cta">
+          <!-- Menyusun elemen button dengan identitas scrollToMovies. -->
+          <button class="btn-primary" id="scrollToMovies">Pilih Film Sekarang</button>
+          <!-- Menyusun elemen button dengan identitas scrollToBooking. -->
+          <button class="btn-secondary" id="scrollToBooking">Lanjut ke Pemesanan</button>
+        <!-- Menutup elemen div. -->
+        </div>
+        <!-- Menyusun elemen div. -->
+        <div class="hero-metrics">
+          <!-- Menyusun elemen div. -->
+          <div class="metric-card">
+            <!-- Menyusun elemen span. -->
+            <span>Daerah aktif</span>
+            <!-- Menyusun elemen strong dengan identitas heroRegionLabel. -->
+            <strong id="heroRegionLabel">Cirebon</strong>
+          <!-- Menutup elemen div. -->
+          </div>
+          <!-- Menyusun elemen div. -->
+          <div class="metric-card">
+            <!-- Menyusun elemen span. -->
+            <span>Film terpilih</span>
+            <!-- Menyusun elemen strong dengan identitas heroMovieLabel. -->
+            <strong id="heroMovieLabel">Avengers: Endgame</strong>
+          <!-- Menutup elemen div. -->
+          </div>
+          <!-- Menyusun elemen div. -->
+          <div class="metric-card">
+            <!-- Menyusun elemen span. -->
+            <span>Status booking</span>
+            <!-- Menyusun elemen strong. -->
+            <strong>Fast, aman, real-time</strong>
+          <!-- Menutup elemen div. -->
+          </div>
+        <!-- Menutup elemen div. -->
+        </div>
+      <!-- Menutup elemen div. -->
+      </div>
+      <!-- Menyusun elemen div. -->
+      <div class="hero-deco">
+        <!-- Menyusun elemen div. -->
+        <div class="deco-top">
+          <!-- Menyusun elemen div. -->
+          <div class="hero-badge-card">
+            <!-- Menyusun elemen span. -->
+            <span>Platform booking</span>
+            <!-- Menyusun elemen strong. -->
+            <strong>PDA.ID siap bantu booking lebih praktis</strong>
+          <!-- Menutup elemen div. -->
+          </div>
+          <!-- Menyusun elemen div. -->
+          <div class="orb"></div>
+        <!-- Menutup elemen div. -->
+        </div>
+        <!-- Menyusun elemen div. -->
+        <div class="feature-stack">
+          <!-- Menyusun elemen div. -->
+          <div class="feature-panel">
+            <!-- Menyusun elemen div. -->
+            <div class="feature-icon">🎟️</div>
+            <!-- Menyusun elemen h4. -->
+            <h4>Tiket digital</h4>
+            <!-- Menyusun elemen p. -->
+            <p>Pesan tiket lebih cepat tanpa antre dan langsung siap dipakai saat masuk studio.</p>
+          <!-- Menutup elemen div. -->
+          </div>
+          <!-- Menyusun elemen div. -->
+          <div class="feature-panel">
+            <!-- Menyusun elemen div. -->
+            <div class="feature-icon">📍</div>
+            <!-- Menyusun elemen h4. -->
+            <h4>Semua daerah</h4>
+            <!-- Menyusun elemen p. -->
+            <p>Pilih daerah di Indonesia lalu daftar bioskop akan berubah otomatis sesuai lokasi.</p>
+          <!-- Menutup elemen div. -->
+          </div>
+          <!-- Menyusun elemen div. -->
+          <div class="feature-panel wide">
+            <!-- Menyusun elemen div. -->
+            <div class="feature-tag">💺 Kursi bernomor</div>
+            <!-- Menyusun elemen h4. -->
+            <h4>Kursi lebih rapi, pilihan lebih jelas</h4>
+            <!-- Menyusun elemen p. -->
+            <p>Semua kursi dibuat interaktif dan bernomor supaya pengguna lebih mudah memilih posisi duduk yang diinginkan.</p>
+          <!-- Menutup elemen div. -->
+          </div>
+        <!-- Menutup elemen div. -->
+        </div>
+      <!-- Menutup elemen div. -->
+      </div>
+    <!-- Menutup elemen section. -->
+    </section>
+
+    <!-- Menyusun elemen section dengan identitas moviesSection. -->
+    <section class="section" id="moviesSection">
+      <!-- Menyusun elemen div. -->
+      <div class="section-head movies-head">
+        <!-- Menyusun elemen button dengan identitas mobileMoviesBackBtn. -->
+        <button class="mobile-movies-back" id="mobileMoviesBackBtn" type="button">←</button>
+        <!-- Menyusun elemen div. -->
+        <div>
+          <!-- Menyusun elemen h3. -->
+          <h3>Daftar Film Pilihan</h3>
+          <!-- Menyusun elemen p. -->
+          <p>Setiap film sudah dilengkapi gambar supaya tampilannya lebih hidup dan menarik.</p>
+        <!-- Menutup elemen div. -->
+        </div>
+        <!-- Menyusun elemen div dengan identitas mobileMoviesRegion. -->
+        <div class="mobile-movies-location">📍 <span id="mobileMoviesRegion">Cirebon</span></div>
+        <!-- Menyusun elemen button dengan identitas mobileSeeAllBtn. -->
+        <button class="mobile-see-all-btn" id="mobileSeeAllBtn" type="button">See all ›</button>
+      <!-- Menutup elemen div. -->
+      </div>
+      <!-- Menyusun elemen div dengan identitas genreFilters. -->
+      <div class="filter-bar" id="genreFilters"></div>
+      <!-- Menyusun elemen div dengan identitas moviesGrid. -->
+      <div class="movies-grid" id="moviesGrid"></div>
+    <!-- Menutup elemen section. -->
+    </section>
+
+
+
+    <!-- Menyusun elemen section dengan identitas promoSection. -->
+    <section class="section" id="promoSection">
+      <!-- Menyusun elemen div. -->
+      <div class="section-head">
+        <!-- Menyusun elemen div. -->
+        <div>
+          <!-- Menyusun elemen h3. -->
+          <h3>Promo Snack & Bundle</h3>
+          <!-- Menyusun elemen p. -->
+          <p>Tambahkan promo snack, minuman, atau bundle tiket agar pengalaman pesan tiket jadi lebih lengkap.</p>
+        <!-- Menutup elemen div. -->
+        </div>
+      <!-- Menutup elemen div. -->
+      </div>
+      <!-- Menyusun elemen div. -->
+      <div class="promo-wrap">
+        <!-- Menyusun elemen div dengan identitas promoGrid. -->
+        <div class="promo-grid" id="promoGrid"></div>
+      <!-- Menutup elemen div. -->
+      </div>
+    <!-- Menutup elemen section. -->
+    </section>
+
+    <!-- Menyusun elemen section dengan identitas bookingSection. -->
+    <section class="section" id="bookingSection">
+      <!-- Menyusun elemen div. -->
+      <div class="section-head">
+        <!-- Menyusun elemen div. -->
+        <div>
+          <!-- Menyusun elemen h3. -->
+          <h3>Atur Jadwal dan Kursi</h3>
+          <!-- Menyusun elemen p. -->
+          <p>Pilih daerah, bioskop, tanggal, jam tayang, kursi bernomor, metode pembayaran, lalu buka e-tiket premium.</p>
+        <!-- Menutup elemen div. -->
+        </div>
+      <!-- Menutup elemen div. -->
+      </div>
+
+      <!-- Menyusun elemen div. -->
+      <div class="planner">
+        <!-- Menyusun elemen div. -->
+        <div class="panel">
+          <!-- Menyusun elemen h4. -->
+          <h4>Form Pemesanan</h4>
+
+          <!-- Menyusun elemen div dengan identitas selectedMovieCard. -->
+          <div class="selected-movie" id="selectedMovieCard"></div>
+
+          <!-- Menyusun elemen div. -->
+          <div class="subhead">
+            <!-- Menyusun elemen strong. -->
+            <strong>Pilih Bioskop</strong>
+            <!-- Menyusun elemen span dengan identitas cinemaMeta. -->
+            <span class="muted" id="cinemaMeta">4 lokasi tersedia</span>
+          <!-- Menutup elemen div. -->
+          </div>
+          <!-- Menyusun elemen div dengan identitas cinemaGrid. -->
+          <div class="cinema-grid" id="cinemaGrid"></div>
+
+          <!-- Menyusun elemen div. -->
+          <div style="height:18px"></div>
+          <!-- Menyusun elemen div. -->
+          <div class="subhead"><strong>Pilih Tanggal</strong><span class="muted">Jadwal 7 hari</span></div>
+          <!-- Menyusun elemen div dengan identitas dateGrid. -->
+          <div class="date-grid" id="dateGrid"></div>
+
+          <!-- Menyusun elemen div. -->
+          <div style="height:18px"></div>
+          <!-- Menyusun elemen div. -->
+          <div class="subhead"><strong>Pilih Jam Tayang</strong><span class="muted">Jam fleksibel</span></div>
+          <!-- Menyusun elemen div dengan identitas timeGrid. -->
+          <div class="time-grid" id="timeGrid"></div>
+
+          <!-- Menyusun elemen div. -->
+          <div style="height:18px"></div>
+          <!-- Menyusun elemen div. -->
+          <div class="subhead"><strong>Pilih Kursi</strong><span class="muted">Semua kursi sudah diberi nomor</span></div>
+          <!-- Menyusun elemen div. -->
+          <div class="seat-shell">
+            <!-- Menyusun elemen div. -->
+            <div class="screen-visual">SCREEN</div>
+            <!-- Menyusun elemen div dengan identitas seatGrid. -->
+            <div class="seat-grid" id="seatGrid"></div>
+            <!-- Menyusun elemen div. -->
+            <div class="legend">
+              <!-- Menyusun elemen span. -->
+              <span><i class="dot"></i> Available</span>
+              <!-- Menyusun elemen span. -->
+              <span><i class="dot sel"></i> Selected</span>
+              <!-- Menyusun elemen span. -->
+              <span><i class="dot tk"></i> Taken</span>
+              <!-- Menyusun elemen span. -->
+              <span><i class="dot vip"></i> VIP</span>
+              <!-- Menyusun elemen span. -->
+              <span><i class="dot bl"></i> Blocked</span>
+            <!-- Menutup elemen div. -->
+            </div>
+          <!-- Menutup elemen div. -->
+          </div>
+
+          <!-- Menyusun elemen div. -->
+          <div style="height:18px"></div>
+          <!-- Menyusun elemen div. -->
+          <div class="subhead"><strong>Pilih Pembayaran</strong><span class="muted">Digital payment</span></div>
+          <!-- Menyusun elemen div dengan identitas payGrid. -->
+          <div class="pay-grid" id="payGrid"></div>
+          <!-- Menyusun elemen div dengan identitas paymentDetail. -->
+          <div class="payment-detail" id="paymentDetail"></div>
+        <!-- Menutup elemen div. -->
+        </div>
+
+        <!-- Menyusun elemen aside. -->
+        <aside class="panel summary-card">
+          <!-- Menyusun elemen h4. -->
+          <h4>Ringkasan Pesanan</h4>
+          <!-- Menyusun elemen div. -->
+          <div class="summary-top">
+            <!-- Menyusun elemen img dengan identitas summaryPoster. -->
+            <img id="summaryPoster" alt="movie poster" />
+            <!-- Menyusun elemen div. -->
+            <div class="summary-content">
+              <!-- Menyusun elemen div dengan identitas summaryChips. -->
+              <div class="chips" id="summaryChips"></div>
+              <!-- Menyusun elemen h5 dengan identitas summaryTitle. -->
+              <h5 id="summaryTitle"></h5>
+              <!-- Menyusun elemen div dengan identitas summaryGenre. -->
+              <div class="muted" id="summaryGenre"></div>
+            <!-- Menutup elemen div. -->
+            </div>
+          <!-- Menutup elemen div. -->
+          </div>
+          <!-- Menyusun elemen div. -->
+          <div class="line-items">
+            <!-- Menyusun elemen div dengan identitas summaryRegion. -->
+            <div class="line-item"><span>Daerah</span><strong id="summaryRegion"></strong></div>
+            <!-- Menyusun elemen div dengan identitas summaryCinema. -->
+            <div class="line-item"><span>Bioskop</span><strong id="summaryCinema"></strong></div>
+            <!-- Menyusun elemen div dengan identitas summaryDate. -->
+            <div class="line-item"><span>Tanggal</span><strong id="summaryDate"></strong></div>
+            <!-- Menyusun elemen div dengan identitas summaryTime. -->
+            <div class="line-item"><span>Jam</span><strong id="summaryTime"></strong></div>
+            <!-- Menyusun elemen div dengan identitas summarySeats. -->
+            <div class="line-item"><span>Kursi</span><strong id="summarySeats"></strong></div>
+            <!-- Menyusun elemen div dengan identitas summaryPayment. -->
+            <div class="line-item"><span>Metode bayar</span><strong id="summaryPayment"></strong></div>
+            <!-- Menyusun elemen div dengan identitas summaryPaymentStatus. -->
+            <div class="line-item"><span>Status bayar</span><strong id="summaryPaymentStatus"></strong></div>
+            <!-- Menyusun elemen div dengan identitas summaryPromo. -->
+            <div class="line-item"><span>Promo tambahan</span><strong id="summaryPromo"></strong></div>
+            <!-- Menyusun elemen div dengan identitas summaryTicketPrice. -->
+            <div class="line-item"><span>Harga tiket</span><strong id="summaryTicketPrice"></strong></div>
+            <!-- Menyusun elemen div dengan identitas summaryFee. -->
+            <div class="line-item"><span>Biaya layanan</span><strong id="summaryFee"></strong></div>
+          <!-- Menutup elemen div. -->
+          </div>
+          <!-- Menyusun elemen div. -->
+          <div class="total-box">
+            <!-- Menyusun elemen div. -->
+            <div>
+              <!-- Menyusun elemen div. -->
+              <div class="muted">Total Pembayaran</div>
+              <!-- Menyusun elemen b dengan identitas summaryTotal. -->
+              <b id="summaryTotal"></b>
+            <!-- Menutup elemen div. -->
+            </div>
+            <!-- Menyusun elemen div dengan identitas summarySeatCount. -->
+            <div class="chip" id="summarySeatCount">0 kursi</div>
+          <!-- Menutup elemen div. -->
+          </div>
+          <!-- Menyusun elemen button dengan identitas checkoutBtn. -->
+          <button class="checkout-btn" id="checkoutBtn">Buka E-Tiket</button>
+          <!-- Menyusun elemen div. -->
+          <div class="hint">Tip: pilih minimal 1 kursi untuk mengaktifkan e-tiket.</div>
+        <!-- Menutup elemen aside. -->
+        </aside>
+      <!-- Menutup elemen div. -->
+      </div>
+    <!-- Menutup elemen section. -->
+    </section>
+
+    <!-- Menyusun elemen div. -->
+    <div class="mobile-bottom-nav">
+      <!-- Menyusun elemen button. -->
+      <button class="active" data-scroll="top">Home</button>
+      <!-- Menyusun elemen button. -->
+      <button data-scroll="moviesSection">Film</button>
+      <!-- Menyusun elemen button. -->
+      <button data-scroll="promoSection">Promo</button>
+      <!-- Menyusun elemen button. -->
+      <button data-scroll="bookingSection">Booking</button>
+    <!-- Menutup elemen div. -->
+    </div>
+
+    <!-- Menyusun elemen div. -->
+    <div class="mobile-step-nav">
+      <!-- Menyusun elemen button dengan identitas mobilePrevBtn. -->
+      <button id="mobilePrevBtn">Kembali</button>
+      <!-- Menyusun elemen button dengan identitas mobileNextBtn. -->
+      <button id="mobileNextBtn">Lanjut</button>
+    <!-- Menutup elemen div. -->
+    </div>
+  <!-- Menutup elemen div. -->
+  </div>
+
+
+  <!-- Menyusun elemen div dengan identitas movieDetailModal. -->
+  <div class="movie-detail-modal" id="movieDetailModal">
+    <!-- Menyusun elemen div. -->
+    <div class="movie-detail-sheet">
+      <!-- Menyusun elemen button dengan identitas closeMovieDetailBtn. -->
+      <button class="movie-detail-close" id="closeMovieDetailBtn">✕</button>
+      <!-- Menyusun elemen div dengan identitas movieDetailContent. -->
+      <div id="movieDetailContent"></div>
+    <!-- Menutup elemen div. -->
+    </div>
+  <!-- Menutup elemen div. -->
+  </div>
+
+  <!-- Menyusun elemen div dengan identitas ticketModal. -->
+  <div class="ticket-modal" id="ticketModal">
+    <!-- Menyusun elemen div. -->
+    <div class="ticket-shell">
+      <!-- Menyusun elemen div. -->
+      <div class="ticket-head">
+        <!-- Menyusun elemen div. -->
+        <div>
+          <!-- Menyusun elemen h3. -->
+          <h3>E-Tiket</h3>
+          <!-- Menyusun elemen div. -->
+          <div class="muted">Tampilan e-tiket dibuat lebih keren, modern, dan siap dipakai setelah pembayaran.</div>
+        <!-- Menutup elemen div. -->
+        </div>
+        <!-- Menyusun elemen button dengan identitas closeTicketBtn. -->
+        <button class="close-ticket" id="closeTicketBtn">✕</button>
+      <!-- Menutup elemen div. -->
+      </div>
+      <!-- Menyusun elemen div dengan identitas ticketCard. -->
+      <div class="ticket-card" id="ticketCard"></div>
+      <!-- Menyusun elemen div. -->
+      <div class="ticket-actions" style="margin-top:18px">
+        <!-- Menyusun elemen button. -->
+        <button class="solid" onclick="window.print()">🖨️ Print Tiket</button>
+        <!-- Menyusun elemen button dengan identitas downloadSummaryBtn. -->
+        <button class="ghost" id="downloadSummaryBtn">📄 Simpan Info Tiket</button>
+        <!-- Menyusun elemen button dengan identitas closeBottomBtn. -->
+        <button class="ghost" id="closeBottomBtn">Tutup</button>
+      <!-- Menutup elemen div. -->
+      </div>
+      <!-- Menyusun elemen div. -->
+      <div class="hint">Harap datang 15 menit sebelum jam tayang dimulai. Tunjukkan QR code atau kode booking saat masuk studio.</div>
+    <!-- Menutup elemen div. -->
+    </div>
+  <!-- Menutup elemen div. -->
+  </div>
+
+  <!-- Memuat assets/js/compat.js sesuai urutan dependensinya. -->
+  <script src="assets/js/compat.js"></script>
+  <!-- Memuat assets/js/data.js sesuai urutan dependensinya. -->
+  <script src="assets/js/data.js"></script>
+  <!-- Memuat assets/js/state.js sesuai urutan dependensinya. -->
+  <script src="assets/js/state.js"></script>
+  <!-- Memuat assets/js/utils.js sesuai urutan dependensinya. -->
+  <script src="assets/js/utils.js"></script>
+  <!-- Memuat assets/js/ui.js sesuai urutan dependensinya. -->
+  <script src="assets/js/ui.js"></script>
+  <!-- Memuat assets/js/events.js sesuai urutan dependensinya. -->
+  <script src="assets/js/events.js"></script>
+  <!-- Memuat assets/js/app.js sesuai urutan dependensinya. -->
+  <script src="assets/js/app.js"></script>
+<!-- Menutup elemen body. -->
+</body>
+<!-- Menutup elemen html. -->
+</html>
